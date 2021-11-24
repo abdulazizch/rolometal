@@ -1,0 +1,329 @@
+@font-face{
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-SemiBold.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-Bold.ttf);
+    font-weight: 700;
+}
+@font-face{
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face{
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-Black.ttf);
+    font-weight: 900;
+}
+
+
+
+@font-face{
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Light.otf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Regular.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Medium.otf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Bold.otf);
+    font-weight: 700;
+}
+
+
+
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/montserrat/Montserrat-Light.otf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/montserrat/Montserrat-Regular.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/montserrat/Montserrat-Medium.otf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/montserrat/Montserrat-SemiBold.otf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/montserrat/Montserrat-Bold.otf);
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/montserrat/Montserrat-ExtraBold.otf);
+    font-weight: 800;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --clr-prim: #fabc3d;
+    --clr-sec: #2b2f37;
+    --clr-ter: #252730;
+}
+.main-wrapper{
+    width: 100%;
+    height: auto;
+}
+h2{
+    font-family: Nunito;
+}
+p, ul, h5{
+    font-family: Poppins;
+    color: var(--clr-sec);
+    font-size: 15px;
+}
+main{
+    width: 100%;
+    padding: 0;
+}
+.header-section{
+    width: 100%;
+    height: 100vh;
+}
+.header-section .navbar{
+    width: 100%;
+    background: var(--clr-prim);
+}
+.navbar-expand-md .navbar-collapse{
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.navbar-toggler .navbar-toggler-icon{
+    background-image: url("../images/togger-icon.png") !important;
+  }
+  .navbar-toggler:focus{
+      box-shadow: none;
+  }
+.navbar .navbar-brand{
+    color: var(--clr-ter);
+    font-weight: 800;
+    font-family: Nunito;
+    font-size: 22px;
+}
+.navbar .navbar-nav .nav-item{
+    margin: 0 10px;
+}
+.navbar .navbar-nav .nav-item.active{
+    border-bottom: 3px solid var(--clr-ter);
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--clr-sec);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* .navbar .flags-con .flags{
+    
+} */
+.flags .flag{
+    width: 40px;
+}
+.flags .flag img{
+    width: 100%;
+}
+
+/* ------------ Header Styles --------- */
+header{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    background: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: left center;
+    position: relative;
+}
+header::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.4;
+    z-index: 1;
+}
+header .header-con{
+    position: relative;
+    z-index: 2;
+}
+header .header-text{
+    width: 45%;
+    position: relative;
+    top: 20%;
+}
+.header-text h2{
+    font-size: clamp(46px,10vw, 96px);
+    font-family: Nunito;
+    font-weight: 800;
+    color: #fff;
+}
+.header-text p{
+    font-size: clamp(14px,3vw, 20px);
+    font-family: popins ;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.header-text .header-btn-con{
+   margin-top: 20px;
+}
+.btn.contact-btn{
+   background: var(--clr-prim);
+   color: var(--clr-ter);
+   padding: 10px 30px;
+   text-decoration: none;
+   border-radius: 3px;
+   font-weight: 600;
+}
+
+ /* -----------About setion style-------- */
+section{
+    width: 100%;
+    padding: 60px 0;
+}
+
+.section-title{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.section-title h2{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section-title::after{
+    content: "";
+    width: 100px;
+    height: 4px;
+    border-radius: 10px;
+    background: var(--clr-prim);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.section-content{
+    margin: 0;
+    margin-top: 60px;
+}
+
+.section-content .section-text .btn{
+    padding: 6px 40px;
+    font-family: Montserrat;
+}
+.section-content .section-img img{
+    width:90%;
+}
+
+
+
+.section-text.about-text .about-bottom-text p{
+    width: 75%;
+    font-weight: 500;
+    color: var(--clr-ter);
+}
+
+
+/* product section styles  */
+.section-img.product-img img{
+    width: 100%;
+}
+.section-text.product-text h5{
+    font-weight: 600;
+    padding-left: 10px;
+    position: relative;
+}
+.section-text.product-text h5:before{
+    content: "";
+    height: 20px;
+    width: 4px;
+    position: absolute;
+    background: var(--clr-prim);
+    left: 0px;
+}
+.section-text.product-text .product-info{
+    margin-left: 20px;
+}
+
+
+/* services section style  */
+.services-section{
+    background: #f8f8f8;
+}
+.section-img.service-img img{
+    width: 70%;
+}
+
+.section-text.service-text .services-list{
+    list-style: none;
+}
+.services-list li{
+    display: inline-block;
+    width: 30%;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 10px;
+}
+.services-list li::before{
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: var(--clr-prim);
+    position: absolute;
+    left: 0;
+}
+
+/* ---------Download Styles------------- */
+
+.download-section{
+    background: var(--clr-prim);
+}
+.download-section .section-title::after{
+    background:#ffffff;
+}
+.section-text.download-text h3{
+    font-size: 46px;
+    color: #fff;
+}
+.section-text.download-text .items-list li{
+    font-weight: 600;
+}
+
+.section-img.download-img img{
+    width: 65%;
+}
