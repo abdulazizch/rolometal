@@ -85,7 +85,9 @@
     src: url(../fonts/montserrat/Montserrat-ExtraBold.otf);
     font-weight: 800;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -98,6 +100,10 @@ body{
     --clr-sec: #2b2f37;
     --clr-ter: #252730;
 }
+::marker{
+    color: var(--clr-prim);
+    font-size: 20px;
+}
 .main-wrapper{
     width: 100%;
     height: auto;
@@ -105,10 +111,13 @@ body{
 h2{
     font-family: Nunito;
 }
-p, ul, h5{
+h3,h5{
+    font-family: Poppins;
+}
+p, ul{
     font-family: Poppins;
     color: var(--clr-sec);
-    font-size: 15px;
+    font-size: 16px;
 }
 main{
     width: 100%;
@@ -121,7 +130,11 @@ main{
 .header-section .navbar{
     width: 100%;
     background: var(--clr-prim);
+    position: fixed;
+    top: 0;
+    z-index: 9;
 }
+
 .navbar-expand-md .navbar-collapse{
     justify-content: flex-end;
     padding-right: 20px;
@@ -163,7 +176,7 @@ main{
 /* ------------ Header Styles --------- */
 header{
     width: 100%;
-    height: 92%;
+    height: 100%;
     display: flex;
     background: url(../images/banner-bg.jpg);
     background-size: cover;
@@ -196,7 +209,7 @@ header .header-text{
 }
 .header-text p{
     font-size: clamp(14px,3vw, 20px);
-    font-family: popins ;
+    font-family: Poppins ;
     color: #fff;
     margin-bottom: 50px;
 }
@@ -259,7 +272,8 @@ section{
 }
 
 
-/* product section styles  */
+/*------------- product section styles ------------------ */
+
 .section-img.product-img img{
     width: 100%;
 }
@@ -267,10 +281,11 @@ section{
     font-weight: 600;
     padding-left: 10px;
     position: relative;
+    font-size: 17px;
 }
-.section-text.product-text h5:before{
+.section-text.product-text h5::before{
     content: "";
-    height: 20px;
+    height: 100%;
     width: 4px;
     position: absolute;
     background: var(--clr-prim);
@@ -279,9 +294,14 @@ section{
 .section-text.product-text .product-info{
     margin-left: 20px;
 }
+.product-section .section-content .profiles-list{
+    list-style: square;
+}
 
 
-/* services section style  */
+
+
+/*----------------- services section style --------------- */
 .services-section{
     background: #f8f8f8;
 }
@@ -302,13 +322,13 @@ section{
 .services-list li::before{
     content: "";
     width: 4px;
-    height: 20px;
+    height: 100%;
     background: var(--clr-prim);
     position: absolute;
     left: 0;
 }
 
-/* ---------Download Styles------------- */
+/*----------------- Download Styles ------------- */
 
 .download-section{
     background: var(--clr-prim);
@@ -320,10 +340,91 @@ section{
     font-size: 46px;
     color: #fff;
 }
+.section-text.download-text .items-list{
+    list-style: square;
+}
 .section-text.download-text .items-list li{
     font-weight: 600;
+}
+.section-text.download-text .items-list li::marker{
+    color: var(--clr-sec);
+    font-size: 18px;
 }
 
 .section-img.download-img img{
     width: 65%;
+}
+
+
+/* ----------------- Contact Section Styles --------- */
+.contact-section{
+    padding-bottom: 0;
+}
+.contact-text .text h3{
+    position: relative;
+    padding-left: 12px;
+    font-weight: 500;
+}
+.contact-text .text h3::before{
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--clr-prim);
+}
+.contact-text .text p{
+    margin-left: 20px;
+    color: var(--clr-prim);
+}
+
+.contact-tabs{
+    width: 100%;
+    padding: 0;
+}
+.contact-tabs .contact-tab .tab-content{
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 15px 0;
+    border-radius: 5px;
+}
+.tab-content .tab-icon{
+    display: flex;
+    justify-content: center;
+}
+.tab-content .tab-icon span{
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: var(--clr-prim);
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+.tab-content .tab-info{
+    text-align: center;
+}
+.section-img.contact-img img{
+    width: 80%;
+}
+@media only screen and (max-width:500px){
+    .section-img{
+        margin-top: 50px;
+    }
+    .section-img.product-img{
+        margin-top: 0;
+    }
+}
+.copyright{
+    background: var(--clr-ter);
+    padding: 20px 0;
+    margin-top: 60px;
+}
+.copyright .copyright-text p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
 }
