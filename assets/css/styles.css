@@ -478,12 +478,23 @@ section{
     margin-bottom: 34px;
 }
 .section-text.download-text .items-list{
-    list-style: square;
+    list-style: none;
 }
 
-.section-text.download-text .items-list li::marker{
-    color: var(--clr-sec);
-    font-size: 18px;
+.section-text.download-text .items-list li{
+    padding-left: 25px;
+    position: relative;
+    margin: 7px 0;
+}
+.section-text.download-text .items-list li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 20px;
+    background: url(../images/pdf.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .section-text.download-text .items-list li a{
     font-weight: 600;
