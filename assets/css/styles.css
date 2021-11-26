@@ -168,9 +168,11 @@ main{
 }
 .navbar .navbar-nav .nav-item{
     margin: 0 10px;
+    padding-bottom: 2px;
 }
 .navbar .navbar-nav .nav-item.active{
-    border-bottom: 3px solid var(--clr-ter);
+    border-bottom: 2px solid var(--clr-ter);
+    padding-bottom: 0;
 }
 .navbar .navbar-nav .nav-link{
     color: var(--clr-sec);
