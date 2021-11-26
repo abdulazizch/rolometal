@@ -7,7 +7,7 @@ $('.nav-item').on('click', function(){
 
   $(window).scroll(function() {
       
-    if(isInView($("#about"))){
+    if(isInView($("#about")) || isInView($("#products"))){
         $('.nav-item').removeClass('active');
         $('.nav-item.about').addClass('active');
     }
@@ -23,10 +23,11 @@ $('.nav-item').on('click', function(){
         $('.nav-item').removeClass('active');
         $('.nav-item.downloads').addClass('active');
     }
-    if(isInView($("#contact"))){
+    if(!isInView($("#downloads")) && isInView($("#contact"))){
         $('.nav-item').removeClass('active');
         $('.nav-item.contact').addClass('active');
     }
+    
     // isInView($("#products"));
     // 
     // isInView($("#downloads"));

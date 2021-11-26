@@ -286,7 +286,7 @@ header .header-text{
 
 .btn.contact-btn:hover{
    background: #faa23d;
-   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+   color: #fff;
 }
 .mobile-scroll{
     position: absolute;
@@ -335,7 +335,8 @@ header .header-text{
  /* -----------About setion style-------- */
 section{
     width: 100%;
-    padding: 60px 0;
+    padding: 100px 0;
+    min-height: 100vh;
 }
 
 .section-title{
@@ -363,7 +364,7 @@ section{
 }
 
 .section-content .section-text .btn{
-    padding: 6px 40px;
+    padding: 10px 40px;
     font-family: Montserrat;
 }
 .section-content .section-img img{
@@ -447,6 +448,7 @@ section{
 
 .download-section{
     background: var(--clr-prim);
+    min-height: auto;
 }
 .download-section .section-title::after{
     background:#ffffff;
@@ -480,6 +482,8 @@ section{
 /* ----------------- Contact Section Styles --------- */
 .contact-section{
     padding-bottom: 0;
+    margin-top: 20vh;
+    min-height: auto;
 }
 .contact-text .text h3{
     position: relative;
