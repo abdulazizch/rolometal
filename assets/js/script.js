@@ -28,10 +28,6 @@ $('.nav-item').on('click', function(){
         $('.nav-item.contact').addClass('active');
     }
     
-    // isInView($("#products"));
-    // 
-    // isInView($("#downloads"));
-    // isInView($("#contact"));
 });
 
 function isInView(el){

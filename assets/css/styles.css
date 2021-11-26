@@ -278,6 +278,7 @@ header .header-text{
    border-radius: 3px;
    font-weight: 600;
    outline: none;
+   font-family: Montserrat;
 }
 .btn.contact-btn:focus{
    box-shadow: none;
@@ -287,6 +288,7 @@ header .header-text{
 .btn.contact-btn:hover{
    background: #faa23d;
    color: #fff;
+   
 }
 .mobile-scroll{
     position: absolute;
