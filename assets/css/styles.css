@@ -163,9 +163,7 @@ main{
     font-weight: 600;
     text-transform: uppercase;
 }
-/* .navbar .flags-con .flags{
-    
-} */
+
 .selected-flag .flag{
     width: 40px;
 }
@@ -191,7 +189,7 @@ main{
     opacity: 0;
     border-radius: 2px;
 }
-.flags-con:hover .flags{
+.flags-con.show .flags{
     transform: scale(1);
     opacity: 1;
 }
@@ -263,7 +261,7 @@ header .header-text{
 }
 .mobile-scroll{
     position: absolute;
-    z-index: 9;
+    z-index: 3;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
@@ -285,7 +283,6 @@ header .header-text{
     background: #fff;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
     animation: drop 1.3s infinite;
     transition: all 0.3s ease-in-out;
 }

@@ -27,19 +27,29 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item about active">
-                                    <a href="#about" class="nav-link">About</a>
+                                    <a href="#about" class="nav-link   text-content serbian">O NAMA</a>
+                                    <a href="#about" class="nav-link text-content hungarian">RÓLUNK</a>
+                                    <a href="#about" class="nav-link   text-content english">About</a>
                                 </li>
                                 <li class="nav-item products">
-                                    <a href="#products" class="nav-link">Products</a>
+                                    <a href="#products" class="nav-link   text-content serbian">PROIZVODI</a>
+                                    <a href="#products" class="nav-link text-content hungarian">TERMÉKEK</a>
+                                    <a href="#products" class="nav-link   text-content english">Products</a>
                                 </li>
                                 <li class="nav-item services">
-                                    <a href="#services" class="nav-link">Services</a>
+                                    <a href="#services" class="nav-link   text-content serbian">Usluge</a>
+                                    <a href="#services" class="nav-link text-content hungarian">Szolgáltatások</a>
+                                    <a href="#services" class="nav-link   text-content english">Services</a>
                                 </li>
                                 <li class="nav-item downloads">
-                                    <a href="#downloads" class="nav-link">Download</a>
+                                    <a href="#downloads" class="nav-link   text-content serbian">Preuzimanje</a>
+                                    <a href="#downloads" class="nav-link text-content hungarian">Letöltés</a>
+                                    <a href="#downloads" class="nav-link   text-content english">Download</a>
                                 </li>
                                 <li class="nav-item contact">
-                                    <a href="#contact" class="nav-link">Contact</a>
+                                    <a href="#contact" class="nav-link   text-content serbian">Kontakt</a>
+                                    <a href="#contact" class="nav-link text-content hungarian">Kapcsolatba lépni</a>
+                                    <a href="#contact" class="nav-link   text-content english">Contact</a>
                                 </li>
                             </ul>
                           </div>
@@ -47,24 +57,24 @@
                               <div class="selected-flag">
                                 <div class="flag">
                                     <a href="" class="btn-selected-flag">
-                                      <img src="./assets/images/serbian.png" alt="">
+                                      <img src="./assets/images/serbian.png" class="selected-flag-img" alt="">
                                     </a>
                                 </div>
                               </div>
                               <div class="flags">
                                   <div class="flag">
-                                      <a href="" class="btn-serb">
-                                        <img src="./assets/images/serbian.png" alt=""  data-toggle="tooltip" data-placement="top" title="Serbian">
+                                      <a href="" class="btn-serb btn-lang" data-filter="serbian">
+                                        <img src="./assets/images/serbian.png" class="flag-item" alt=""  data-toggle="tooltip" data-placement="top" title="Serbian">
                                       </a>
                                   </div>
                                   <div class="flag">
-                                      <a href="" class="btn-hung"  data-toggle="tooltip" data-placement="top" title="Hungarian">
-                                        <img src="./assets/images/Hungarian.jpg" alt="">
+                                      <a href="" class="btn-hung btn-lang"  data-filter="hungarian" >
+                                        <img src="./assets/images/Hungarian.jpg" class="flag-item" alt="" data-toggle="tooltip" data-placement="top" title="Hungarian">
                                       </a>
                                   </div>
                                   <div class="flag">
-                                      <a href="" class="btn-eng">
-                                        <img src="./assets/images/eng.jpg" alt=""  data-toggle="tooltip" data-placement="top" title="English">
+                                      <a href="" class="btn-eng btn-lang" data-filter="english">
+                                        <img src="./assets/images/eng.jpg" class="flag-item" alt=""  data-toggle="tooltip" data-placement="top" title="English">
                                       </a>
                                   </div>
                               </div>
@@ -78,10 +88,21 @@
                 <header>
                     <div class="header-con container">
                         <div class="header-text">
-                            <h2>Rolometal Doo</h2>
-                            <p>Quality, reliable and fast, all with a smile and good mood!</p>
+                            <h2 translate="false">Rolometal Doo</h2>
+                            <!-- text for serbian  -->
+                            <p class="text-content serbian">Kvalitetno, pouzdano i brzo, a sve uz osmeh i dobro raspoloženje!</p>
+                            <!-- text for hungarian  -->
+                            <p class="text-content hungarian">Minőségi, megbízható és gyors, mindezt mosolyogva és jó hangulatban!</p>
+                            <!-- text for english  -->
+                            <p class="text-content english">Quality, reliable and fast, all with a smile and good mood!</p>
+
                             <div class="header-btn-con">
-                                <a href="#contact" class="btn contact-btn">Contact us</a>
+                                <!-- text for serbian  -->
+                                <a href="#contact" class="btn contact-btn text-content serbian">Obratite se nama!</a>
+                                <!-- text for hungarian -->
+                                <a href="#contact" class="btn contact-btn text-content hungarian">Lépjen kapcsolatba velünk!</a>
+                                <!-- text for english  -->
+                                <a href="#contact" class="btn contact-btn text-content english">Contact us</a>
                             </div>
                         </div>
                     </div>
@@ -95,20 +116,57 @@
             <section id="about" class="about-section">
                 <div class="about-sec-con container">
                     <div class="section-title">
-                        <h2>About Us</h2>
+                        <h2 class="text-content serbian">O NAMA</h2>
+                        <h2 class="text-content hungarian">RÓLUNK</h2>
+                        <h2 class="text-content english">About Us</h2>
                     </div>
                     <div class="section-content row align-items-center">
                         <div class="section-text about-text col-12 col-md-6">
-                           <div class="text">
-                            <p>The company " Rolometal " was founded in 1999 in Becej. 
-                                Today, the company is engaged in the production, sale and installation of various products, such as:</p>
-                                <ul>
-                                    <li>PVC and aluminum joinery</li>
-                                    <li>PVC and aluminum shutters</li>
-                                    <li>Drips</li>
-                                    <li>Window sills</li>
-                                </ul>
-                            <p>Roller shutters and fixed mosquito nets and venetian blinds are available.
+                             <!-- text for serbian  -->
+                           <div class="text text-content serbian">
+                                <p>Firma „Rolometal“ osnovana je 1999. godine u Bečeju.
+                                    Danas se firma bavi proizvodnjom, prodajom i ugradnjom različitih proizvoda, kao što su:</p>
+                                    <ul>
+                                        <li>PVC i aluminijumska stolarija</li>
+                                        <li>PVC i aluminijumske roletne</li>
+                                        <li>okapnice</li>
+                                        <li>potprozorske daske</li>
+                                    </ul>
+                                <p>Na raspolaganju su vam rolo i fiksni komarnici i venecijaneri.
+                                    Pored navedenih poslova, Rolometal vrši i transport robe u međunarodnom i domaćem saobraćaju. <br>
+                                    Za uspeh i postignute rezultate zaslužno je, kako osoblje u komercijali, tako i radnici u proizvodnji i transportu.<br>
+                                    Planovi firme za budućnost su povećanje obima proizvodnje uz pomoć savremene tehnologije rada, povećanje broja zaposlenih i proširenje tržišta, kako u našoj zemlji, tako i u inostranstvu.
+                                </p>
+                                <p>Za kvalitet rada, Rolometal je dobio i odlikovanje Novosadskog Sajma 2000. godine.</p>
+                           </div>
+                           <!-- text for hungarian -->
+                           <div class="text text-content hungarian">
+                                <p>A " Rolometal " céget 1999-ben alapították Óbecsén.
+                                    A cég ma különböző termékek gyártásával, értékesítésével és beszerelésével foglalkozik, mint például:</p>
+                                    <ul>
+                                        <li>PVC és alumínium asztalosáruk</li>
+                                        <li>PVC és alumínium redőnyök</li>
+                                        <li>csepegtetők</li>
+                                        <li>ablakpárkányok</li>
+                                    </ul>
+                                <p>Redőnyök és fix szúnyoghálók és reluxák is kaphatók.
+                                    A Rolometál a fenti tevékenységek mellett nemzetközi és belföldi forgalomban is árufuvarozást végez. <br>
+                                    A siker és az elért eredmények mind a kereskedelmi, mind a termelésben és szállításban dolgozó munkatársaknak köszönhetők.<br>
+                                    A cég tervei között szerepel a jövőre nézve a termelés volumenének növelése a korszerű munkatechnológia segítségével, létszámbővítés, valamint a piac bővítése hazánkban és külföldön egyaránt.
+                                </p>
+                                <p>A munka minőségéért a Rolometál 2000-ben az Újvidéki Vásár díszét is megkapta.</p>
+                           </div>
+                            <!-- text for english  -->
+                           <div class="text text-content english">
+                                <p>The company " Rolometal " was founded in 1999 in Becej. 
+                                    Today, the company is engaged in the production, sale and installation of various products, such as:</p>
+                                    <ul>
+                                        <li>PVC and aluminum joinery</li>
+                                        <li>PVC and aluminum shutters</li>
+                                        <li>Drips</li>
+                                        <li>Window sills</li>
+                                    </ul>
+                                <p>Roller shutters and fixed mosquito nets and venetian blinds are available.
                                 In addition to the mentioned jobs, Rolometal also transports goods in international and domestic traffic. <br>
                                 The success and the achieved results are due to both the staff in the commercial and the workers in production and transport.<br>
                                 The company's plans for the future are to increase the volume of production with the help of modern work technology, increase the number of employees and expand the market, both in our country and abroad.
@@ -116,10 +174,20 @@
                                 <p>For the quality of work, Rolometal also received the decoration of the Novi Sad Fair in 2000.</p>
                            </div>
                            <div class="contact-btn-con">
-                               <a href="#contact" class="btn contact-btn">Contact Us</a>
+                                <!-- text for serbian  -->
+                            <a href="#contact" class="btn contact-btn text-content serbian">Obratite se nama!</a>
+                            <!-- text for hungarian -->
+                            <a href="#contact" class="btn contact-btn text-content hungarian">Lépjen kapcsolatba velünk!</a>
+                             <!-- text for english  -->
+                            <a href="#contact" class="btn contact-btn text-content english">Contact us</a>
                            </div>
                            <div class="mt-4 about-bottom-text d-flex justify-content-center">
-                            <p class="text-center about-bottom-text">The company "Rolometal" will find the best solution for you and your family.</p>
+                                <!-- text for serbian  -->
+                            <p class="text-center about-bottom-text text-content serbian">Firma “Rolometal” naći će najbolje rešenje za Vas i Vašu porodicu.</p>
+                            <!-- text for hungarian -->
+                            <p class="text-center about-bottom-text text-content hungarian">A "Rolometal" cég megtalálja a legjobb megoldást Önnek és családjának.</p>
+                             <!-- text for english  -->
+                            <p class="text-center about-bottom-text text-content english">The company "Rolometal" will find the best solution for you and your family.</p>
                            </div>
                         </div>
                         <div class="section-img about-img col-12 col-md-6 d-flex justify-content-center">
@@ -134,13 +202,118 @@
             <section id="products" class="product-section">
                 <div class="product-sec-con container">
                     <div class="section-title">
-                        <h2>Products</h2>
+                         <!-- text for serbian  -->
+                        <h2 class="text-content serbian">PROIZVODI</h2>
+                        <!-- text for hungarian -->
+                        <h2 class="text-content hungarian">TERMÉKEK</h2>
+                         <!-- text for english  -->
+                        <h2 class="text-content english">Products</h2>
                     </div>
                     <div class="section-content row align-items-center">
                         <div class="section-img product-img col-12 col-md-6 d-flex justify-content-start">
                             <img src="./assets/images/product-img.svg" alt="">
                         </div>
-                        <div class="section-text product-text col-12 col-md-6">
+
+                        <!-- text for serbian  -->
+                        <div class="section-text product-text col-12 col-md-6 text-content serbian">
+                            <div class="text">
+                                 <p class="">Sistemi profila su međunarodno priznatog kvaliteta, pouzdanosti, jedinstvenog dizajna. Zadovoljavaju i najstrožije tehničke zahteve struke ali i zahteve krajnjih korisnika.
+                                    Dakle, omogućuju visok kvalitet proizvoda koji uvećavaju vrednost vašeg doma.</p>
+                                     <div class="product-title">
+                                         <h5>PVC stolarija:</h5>
+                                     </div>
+                                 <div class="product-info">
+                                     <p>Proizvode izrađujemo od veoma otpornih PVC profila:</p>
+                                     <ul class="m-0 mb-2">
+                                         <li>Deceuninck / Thysen</li>
+                                         <li>Decco</li>
+                                     </ul>
+                                 </div>
+                                 <div class="product-title">
+                                     <h5>Profili:</h5>
+                                 </div>
+                                 <div class="product-info">
+                                 <p class="m-0">Sistemi profila sadrže 5 i 6 komora, koji prvenstveno obezbeđuju stabilnost ramova a pored toga daju i veću vazdušnu izolaciju.
+                                 <br>Ugrađujemo zastakljene prozore sa termopan staklom, po zahtevu ispunjene argonom (gasom koji obezbeđuje bolju termoizolaciju).
+                                 </p>
+                            </div>
+                            </div>
+                         </div>
+                         <div class="text-bottom mt-4 text-content serbian">
+                             <ul class="profiles-list ">
+                                 <li>Ramovi su okovani unutrašnjim čeličnim pocinkovanim ojačanjem.</li>
+                                 <li>Profili su u skladu sa evropskim standardom EN-12 608, svrstani u najvišu „A” kategoriju sa debljinom spoljnih zidova do 3mm.</li>
+                                 <li>Profili su u skladu sa evropskim standardom EN-12 608, svrstani u najvišu „A” kategoriju sa debljinom spoljnih zidova do 3mm.</li>
+                                 <li>Izvanredna toplotna i zvučna izolacija</li>
+                                 <li>Izvanredna toplotna i zvučna izolacija</li>
+                                 <li>Povišena bezbednost, naslon srednje zaptivke onemugaćava pokušaj da se krilo spolja podigne</li>
+                                 <li>Dubina ugradnje 72mm do 78mm</li>
+                                 <li>Čelično ojačanje oslonjeno na dužini od 4cm garantuje odlične statičke karakteristike</li>
+                                 <li>Prihvat stakla debljine do 42mm</li>
+                                 <li>Prihvat stakla debljine do 42mm</li>
+                                 <li>Spoljna linija profila dizajnirana da omogući efikasan odvod atmosferskih padavina</li>
+                                 <li>Profili u boji</li>
+                                 <li>Staklo: mogućnost ugradnje svih vrsta stakla</li>
+                             </ul>
+                             <p class="m-0">Kod nas se takođe proizvode i klizna vrata, manja garažna vrata, spoljašnja harmonika vrata, izlozi (portali), i ostali proizodi od PVC materijala, po želji kupaca.</p>
+                             <ul>
+                                 <li>Stolarija je opremljena sa okovima Siegenia- Aubi ili Vabis.</li>
+                                 <li>Zaključavanje je u pet tačaka (Multi-lock).</li>
+                                 <li>Na ove proizvode dajemo garanciju od 2 do 10 godina.</li>
+                             </ul>
+                         </div>
+
+                        <!-- text for hungarian  -->
+                        <div class="section-text product-text col-12 col-md-6 text-content hungarian">
+                           <div class="text">
+                                <p class="">A profilrendszerek nemzetközileg elismert minőség, megbízhatóság, egyedi kialakításúak. Megfelelnek a szakma legszigorúbb műszaki követelményeinek, de a végfelhasználói elvárásoknak is.
+                                    Így kiváló minőségű termékeket tesznek lehetővé, amelyek növelik otthona értékét.</p>
+                                    <div class="product-title">
+                                        <h5>PVC asztalos munka:</h5>
+                                    </div>
+                                <div class="product-info">
+                                    <p>Nagyon ellenálló PVC profilokból készítünk termékeket:</p>
+                                    <ul class="m-0">
+                                        <li>Deceuninck / Thysen</li>
+                                        <li>Decco</li>
+                                    </ul>
+                                </div>
+                                <div class="product-title">
+                                    <h5>Deceuninck / Thysen</h5>
+                                </div>
+                                <div class="product-info">
+                                <p class="m-0">A profilrendszerek 5 és 6 kamrát tartalmaznak, amelyek elsősorban a keretek stabilitását és ezen felül nagyobb légszigetelést biztosítanak.
+                                <br>Igény szerint argon töltésű (jobb hőszigetelést biztosító gáz) termopán üvegezésű ablakokat építünk be.
+                                </p>
+                           </div>
+                           </div>
+                        </div>
+                        <div class="text-bottom mt-4 text-content hungarian">
+                            <ul class="profiles-list ">
+                                <li>A keretek belső horganyzott acél erősítéssel vannak láncolva.</li>
+                                <li>A profilok megfelelnek az EN-12 608 európai szabványnak, a legmagasabb "A" kategóriába sorolva, a külső falak vastagsága legfeljebb 3 mm.</li>
+                                <li>Két vagy három gumitömítés védi a vasalatot a nedvességtől és a portól, meghosszabbítva az élettartamát</li>
+                                <li>Kiemelkedő hő- és hangszigetelés</li>
+                                <li>Átlagon felüli vízszigetelés</li>
+                                <li>Fokozott biztonság, a középső tömítés háttámlája megakadályozza a szárny felemelését</li>
+                                <li>Beépítési mélység 72mm 78 mm-ig</li>
+                                <li>A 4 cm-es hosszban alátámasztott acél kiváló statikus tulajdonságokat garantál</li>
+                                <li>Üvegfogás 42 mm vastagságig</li>
+                                <li>Üvegfogás 42 mm vastagságig</li>
+                                <li>A külső profilvonalat úgy tervezték, hogy lehetővé tegye a légköri csapadék hatékony elvezetését</li>
+                                <li>Színes profilok</li>
+                                <li>Üveg: minden típusú üveg beépítésének lehetősége</li>
+                            </ul>
+                            <p class="m-0">Tolóajtókat, kisebb garázskapukat, külső harmonikaajtókat, kirakatokat (portálokat) és egyéb PVC anyagból készült termékeket is gyártunk megrendelői kérésre.</p>
+                            <ul>
+                                <li>Az asztalos műhely Siegenia-Aubi vagy Vabis vasalatokkal van felszerelve.</li>
+                                <li>A zár öt pontban van (Multi-lock).</li>
+                                <li>Ezekre a termékekre 2-10 év garanciát vállalunk.</li>
+                            </ul>
+                        </div>
+
+                        <!-- text for English  -->
+                        <div class="section-text product-text col-12 col-md-6 text-content english">
                            <div class="text">
                                 <p class="">Profile systems are of internationally recognized quality, reliability, unique design. They satisfy even the strictest technical requirements of the profession, but also the requirements of end users.
                                     So, they enable high quality products that increase the value of your home.</p>
@@ -164,7 +337,7 @@
                            </div>
                            </div>
                         </div>
-                        <div class="text-bottom mt-4">
+                        <div class="text-bottom mt-4 text-content english">
                             <ul class="profiles-list ">
                                 <li>The frames are chained with internal galvanized steel reinforcement.</li>
                                 <li>The profiles are in accordance with the European standard EN-12 608, classified in the highest "A" category with the thickness of the outer walls up to 3 mm.</li>
@@ -197,11 +370,63 @@
             <section id="services" class="services-section">
                 <div class="services-sec-con container">
                     <div class="section-title">
-                        <h2>Our Services</h2>
+                        <h2 class="text-content serbian">Naše usluge</h2>
+                        <h2 class="text-content hungarian">Szolgáltatásaink</h2>
+                        <h2 class="text-content english">Our Services</h2>
                     </div>
                     <div class="section-content row align-items-center">
                         <div class="section-text service-text col-12 col-md-6">
-                           <div class="text">
+
+                            <!-- text for serbian  -->
+                           <div class="text text-content serbian">
+                                <p>Vršimo usluge transporta robe u međunarodnom i domaćem saobraćaju.</p>
+                                <p>Naš vozni park raspolaže savremenim kamionima kojim prevozi robu kao na relacijama naše zemlje tako u svim zemljama Evropske unije sa preferencom na:</p>
+                                <ul class="services-list">
+                                    <li>Mađarsku</li>
+                                    <li>Slovačku</li>
+                                    <li>Poljsku</li>
+                                    <li>Nemačku</li>
+                                    <li>Holandiju</li>
+                                    <li>Italiju</li>
+                                    <li>Francusku</li>
+                                    <li>Belgiju</li>
+                                    <li>Austriju</li>
+                                </ul>
+                                <p>Vozila su opremljena mobilnim telefonom, GPS praćenjem, CMR osiguranjem do 100.000,00 Eura.<br>
+                                    Naše usluge su izuzetno kvalitetne i vremenski veoma precizne, a sve to po povoljnim cenama.<br>
+                                    Za sve dodatne informacije vezane za dalju saradnju sa našim preduzećem, možete dobiti klikom ovde.</p>
+                                    <div class="contact-btn-con">
+                                        <!-- text for serbian  -->
+                                        <a href="#contact" class="btn contact-btn text-content serbian">Obratite se nama!</a>
+                                    </div>
+                           </div>
+
+                           <!-- text for hungarian  -->
+                           <div class="text text-content hungarian">
+                            <p>Nemzetközi és belföldi forgalomban áruszállítást végzünk.</p>
+                            <p>Flottánk korszerű tehergépjárművekkel rendelkezik, amelyek mind hazánk útvonalain, mind az Európai Unió összes országában szállítanak árut, előnyben részesítve:</p>
+                            <ul class="services-list">
+                                <li>Magyarország</li>
+                                <li>Szlovákia</li>
+                                <li>Lengyelország</li>
+                                <li>Németország</li>
+                                <li>Hollandia</li>
+                                <li>Olaszország</li>
+                                <li>Franciaország</li>
+                                <li>Belgium</li>
+                                <li>Ausztria A</li>
+                            </ul>
+                            <p>járművek mobiltelefonnal, GPS nyomkövetéssel, CMR biztosítással vannak felszerelve 100.000.00 euróig.<br>
+                                járművek mobiltelefonnal, GPS nyomkövetéssel, CMR biztosítással vannak felszerelve 100.000.00 euróig.</p>
+                                <p>A cégünkkel való további együttműködéssel kapcsolatos minden további információért ide kattintva tájékozódhat.</p>
+                                <div class="contact-btn-con">
+                                    <!-- text for hungarian -->
+                                    <a href="#contact" class="btn contact-btn text-content hungarian">Lépjen kapcsolatba velünk!</a>
+                                </div>
+                            </div>
+
+                            <!-- text for English  -->
+                            <div class="text text-content english">
                                 <p>We provide transport services for goods in international and domestic traffic.</p>
                                 <p>Our fleet has modern trucks that transport goods both on the routes of our country and in all countries of the European Union with a preference for:</p>
                                 <ul class="services-list">
@@ -219,9 +444,10 @@
                                     Our services are extremely high quality and very precise in time, all at affordable prices.</p>
                                     <p>or all additional information related to further cooperation with our company, you can get it by clicking here.</p>
                                     <div class="contact-btn-con">
-                                        <a href="#contact" class="btn contact-btn">Contact Us</a>
+                                        <!-- text for english  -->
+                                        <a href="#contact" class="btn contact-btn text-content english">Contact us</a>
                                     </div>
-                           </div>
+                            </div>
 
                         </div>
 
@@ -237,19 +463,42 @@
             <section id="downloads" class="download-section">
                 <div class="download-sec-con container">
                     <div class="section-title">
-                        <h2>Download</h2>
+                        <h2 class="text-content serbian">PREUZIMANJE</h2>
+                        <h2 class="text-content hungarian">LETÖLTÉS</h2>
+                        <h2 class="text-content english">Download</h2>
                     </div>
                     <div class="section-content row align-items-center">
                         <div class="section-text download-text col-12 col-md-6">
-                           <div class="text">
+
+                            <!-- text for serbian  -->
+                           <div class="text text-content serbian">
+                                <h3>Preuzmite sledeće stavke</h3>
+                                <ul class="items-list">
+                                    <li><a href="">Identifikacioni podaci naše firme</a></li>
+                                    <li><a href="">PDV prijava</a></li>
+                                    <li><a href="">Brošure, prospekti i reklamne materijali</a></li>
+                                </ul>
+                           </div>
+
+                           <!-- text for hungarian  -->
+                           <div class="text text-content hungarian">
+                            <h3>Töltse le a következő elemeket</h3>
+                            <ul class="items-list">
+                                <li><a href="">Cégünk azonosító adatai</a></li>
+                                <li><a href="">ÁFA bevallás</a></li>
+                                <li><a href="">Brosúrák, prospektusok és promóciós anyagok</a></li>
+                            </ul>
+                            </div>
+
+                            <!-- text for English  -->
+                            <div class="text text-content english">
                                 <h3>Download the following items</h3>
                                 <ul class="items-list">
                                     <li><a href="">Identification data of our company</a></li>
                                     <li><a href="">VAT return</a></li>
                                     <li><a href="">Brochures, brochures and promotional materials</a></li>
                                 </ul>
-                                
-                           </div>
+                            </div>
                         </div>
 
                         <div class="section-img download-img col-12 col-md-6 d-flex justify-content-center">
@@ -264,13 +513,23 @@
             <section id="contact" class="contact-section">
                 <div class="contact-sec-con container">
                     <div class="section-title">
-                        <h2>Contact Us</h2>
+                          <!-- text for serbian  -->
+                        <h2 class="text-content serbian">Obratite se nama!</h2>
+                        <!-- text for hungarian  -->
+                        <h2 class="text-content hungarian">Lépjen kapcsolatba velünk!</h2>
+                          <!-- text for English  -->
+                        <h2 class="text-content english">Contact Us</h2>
                     </div>
                     <div class="section-content row align-items-center">
                         <div class="section-text contact-text col-12 col-md-6">
                            <div class="text">
                                 <h3>DOO "ROLOMETAL"</h3>
-                                <p>PVC Joinery and Transport</p>
+                                  <!-- text for serbian  -->
+                                <p  class="text-content serbian">PVC stolarija i transport</p>
+                                <!-- text for hungarian  -->
+                                <p class="text-content hungarian">PVC asztalos és szállítás</p>
+                                  <!-- text for English  -->
+                                <p  class="text-content english">PVC Joinery and Transport</p>
                            </div>
                            <div class="contact-tabs row m-0">
                                <div class="contact-tab col-12">
@@ -279,7 +538,12 @@
                                            <span><i class="fa fa-map-marker"></i></span>
                                        </div>
                                        <div class="tab-info d-flex justify-content-start align-items-center col">
-                                           <p class="m-0">Petrovoselski put 153, 21220 Becej, Serbia</p>
+                                             <!-- text for serbian  -->
+                                           <p class="m-0 text-content serbian">Petrovoselski put 153, 21220 Becej, Serbia</p>
+                                           <!-- text for hungarian  -->
+                                           <p class="m-0 text-content hungarian">Petrovoselski put 153, 21220 Becej, Serbia</p>
+                                             <!-- text for English  -->
+                                           <p class="m-0 text-content english">Petrovoselski put 153, 21220 Becej, Serbia</p>
                                        </div>
                                    </div>
                                </div>
@@ -334,7 +598,12 @@
                 </div>
                 <div class="copyright">
                     <div class="copyright-text">
-                        <p class="m-0">Copyright © 2021, Rolometal doo All rights reserved.</p>
+                          <!-- text for serbian  -->
+                        <p class="m-0 text-content serbian">Copyright © 2021, Rolometal Doo Sva prava zadržana.</p>
+                        <!-- text for hungarian  -->
+                        <p class="m-0 text-content hungarian">Copyright © 2021, Rolometal Doo Minden jog fenntartva.</p>
+                          <!-- text for English  -->
+                        <p class="m-0 text-content english">Copyright © 2021, Rolometal Doo All rights reserved.</p>
                     </div>
                 </div>
             </section>

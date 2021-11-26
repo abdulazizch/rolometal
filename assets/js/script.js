@@ -45,3 +45,42 @@ function isInView(el){
         return false;
     }
 }
+
+
+var lang = "serbian";
+var flag = "";
+$(document).ready(function(){
+    $(".text-content")
+        .not("." + lang)
+        .hide();
+})
+
+$(".btn-selected-flag").on("click", function (e) {
+    e.preventDefault();
+    $(".flags-con").toggleClass("show")
+  });
+
+// Language filter script
+var selectedFlagImg = document.querySelector(".selected-flag-img")
+$(".btn-lang").on("click", function (e) {
+    e.preventDefault();
+    lang = $(this).attr("data-filter");
+    if (lang == "all") {
+      $(".text-content").show();
+    } else {
+      $(".text-content")
+        .not("." + lang)
+        .hide();
+      $(".text-content")
+        .filter("." + lang)
+        .show();
+    }
+
+    if (e.target.parentNode.querySelector(".flag-item")) {
+        const selectedFlag = e.target.parentNode.querySelector(".flag-item");
+        flag = selectedFlag.getAttribute("src");
+        selectedFlagImg.src = flag ;
+      }
+      $(".flags-con").toggleClass("show")
+  });
+
