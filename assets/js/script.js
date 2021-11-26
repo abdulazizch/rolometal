@@ -11,6 +11,9 @@ $('.nav-item').on('click', function(){
         $('.nav-item').removeClass('active');
         $('.nav-item.about').addClass('active');
     }
+    else{
+        $('.nav-item').removeClass('active');
+    }
     if(isInView($("#products"))){
         $('.nav-item').removeClass('active');
         $('.nav-item.products').addClass('active');
