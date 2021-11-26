@@ -253,7 +253,7 @@ header .header-content{
 header .header-text{
     width: 100%;
     position: relative;
-    top: 30%;
+    top: 26%;
 }
 .header-text h2{
     font-size: clamp(46px,10vw, 96px);
