@@ -104,6 +104,10 @@ body{
     color: var(--clr-prim);
     font-size: 20px;
 }
+::selection{
+    background: var(--clr-prim);
+    color: #fff;
+}
 .main-wrapper{
     width: 100%;
     height: auto;
